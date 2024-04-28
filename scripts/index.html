@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Your Name</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Colton Egbert. My Page">
+    <meta name="author" content="Colton Egbert">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/">Your LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng">Favorite Scripture</a></li>
+                <li><a href="#">Final Project Folder</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Section 1</h2>
+            <p>Content for section 1.</p>
+            <ul>
+                <li><a href="#">Resource 1</a></li>
+                <li><a href="#">Resource 2</a></li>
+                <li><a href="#">Resource 3</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Section 2</h2>
+            <p>Content for section 2.</p>
+            <ul>
+                <li><a href="#">Resource 1</a></li>
+                <li><a href="#">Resource 2</a></li>
+                <li><a href="#">Resource 3</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Colton Egbert , USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Dynamically set current year
+        document.getElementById("currentyear").innerText = new Date().getFullYear();
+
+        // Dynamically set last modified date
+        document.getElementById("lastModified").innerText = "Last modified: " + document.lastModified;
+    </script>
+</body>
+</html>
