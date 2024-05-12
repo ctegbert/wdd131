@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #FF0000; /* Red */
+    --secondary-color: #008000; /* Green */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Full-screen image */
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Titled data styles */
+#titled-data {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    text-align: center;
+}
+
+#titled-data h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#titled-data ul {
+    list-style: none;
+    padding: 0;
+}
+
+#titled-data li {
+    margin-bottom: 10px;
+}
+
+/* Weather styles */
+#weather {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    text-align: center; /* Center-align content */
+}
+
+#weather h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #fff; /* Ensure title color matches background */
+}
+
+#weather img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+
+#weather p {
+    margin-bottom: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
