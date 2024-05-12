@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Your Name</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Colton Egbert</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Colton Egbert. My Page">
     <meta name="author" content="Colton Egbert">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <!-- Add Content Security Policy directive for allowing fonts from Google Fonts API -->
+    <meta http-equiv="Content-Security-Policy" content="font-src 'self' fonts.gstatic.com">
+    <!-- Add preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 </head>
 <body>
     <header>
@@ -25,6 +30,8 @@
         <section class="card">
             <h2>Section 1</h2>
             <p>Content for section 1.</p>
+            <img src="images/ring.jpg" alt="Ring">
+            <!-- Add the image for section 1 here -->
             <ul>
                 <li><a href="#">Resource 1</a></li>
                 <li><a href="#">Resource 2</a></li>
@@ -34,6 +41,8 @@
         <section class="card">
             <h2>Section 2</h2>
             <p>Content for section 2.</p>
+            <img src="images/engagement.jpg" alt="Engagement">
+            <!-- Add the image for section 2 here -->
             <ul>
                 <li><a href="#">Resource 1</a></li>
                 <li><a href="#">Resource 2</a></li>
@@ -41,18 +50,13 @@
             </ul>
         </section>
     </main>
+    
 
     <footer>
         <p>&copy; <span id="currentyear"></span> Colton Egbert , USA</p>
         <p id="lastModified"></p>
     </footer>
 
-    <script>
-        // Dynamically set current year
-        document.getElementById("currentyear").innerText = new Date().getFullYear();
-
-        // Dynamically set last modified date
-        document.getElementById("lastModified").innerText = "Last modified: " + document.lastModified;
-    </script>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
