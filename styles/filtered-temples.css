@@ -1,0 +1,110 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Temple card styles */
+.temple-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px); /* Adjust width for 3 cards per row */
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.temple-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.temple-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.temple-card p {
+    margin: 5px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #4CAF50; /* Green background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0; /* Adjust as needed for spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .temple-card {
+        width: calc(50% - 40px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .temple-card {
+        width: calc(100% - 40px); /* 1 card per row */
+    }
+}
