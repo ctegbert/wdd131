@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo_image.jpeg" alt="Logo" class="logo">
+            <h1>Colton Egbert Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ventures.html">Ventures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Get in Touch</h1>
+        <p>Thank you for reading about me and my experiences on this website! I am very interested in partnering with like-minded people to work on a business venture or to join me in my upcoming humanitarian endeavor.
+
+            I can be contacted best via email: coltonegbert98@gmail.com</p>
+            
+            <p><a href="https://www.usaxeclub.com">USAxe Club Website</a></p>
+            
+          <p>  <a href="https://www.elawns.com">eLawns Website</a>
+            </p>
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="images/Portrait.jpg" style="width:100%" loading="lazy">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="images/Plane.jpg" style="width:100%" loading="lazy">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <span class="left-aligned">&copy; Colton Egbert 2024</span>
+            <a href="site-plan.html" class="centered">Site Plan</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slideshow -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo_image.jpeg" alt="Logo" class="logo">
+            <h1>Colton Egbert Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ventures.html">Ventures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Ventures</h1>
+        <p>When I was 7 years old I asked my dad to help me build a chicken coop in the backyard and after filling it with birds and knocking the neighbor’s doors I started my first business - Egbert Eggs! 15 years and many small ventures later, my first real corporation was formed in Lisbon Portugal.
+
+            As shared on the Home Page, my wife and I moved to Portugal in 2020 with the intention of starting a business in the country that I served in as a missionary. My fluency with the local language and network of good people that I’d gained from my prior service equipped me with the confidence to do business in a country that I’d learned to love for many reasons.
+            
+            My idea was to bring something unique from the United States to Portugal, something that they didn’t already have. Randomly, the idea that came to mind was to open an axe throwing venue. </p>
+            
+            <p>I confirmed that nothing of the sort existed in the country, and I’ve loved throwing axes since scout camp where I got my Eagle.
+            
+            We were able to secure our first small location and get some targets built out and the doors open. Unfortunately, we could not have foreseen the impact that COVID-19 would have on our business in its first few months. On top of being forced to limit venue capacity and business hours, at one point having to close for a 3 month period, we received word from our landlord that changes were coming and that they would be demolishing our building so we had to evacuate. 
+            
+            During this time, things looked very bleak for USAxe Club. My Portuguese business partner gave up on the project and left the company and I was left nearly penniless with nothing to show for it. My wife and I couldn’t stand the thought of going home failures though so we hit the streets and found a new venue that would offer us favorable enough terms while we rebuilt. 
+            
+            This time we added a full service restaurant and built out and staffed the venue ourselves.</p>
+            
+            <p>Bit by bit it started to gain momentum and popularity. Now, in 2024, we have 2 locations in Portugal and our restaurant/axe throwing venues have served over 100,000 customers from 180 world nations. We have ambitious goals for expansion throughout Europe over the next couple of years.
+            
+            <p>
+            The other company that I recently started and run is called eLawns. We are an all-electric landscaping service provider. This was an idea that I had as I know that especially in California there is a big push away from small gas engines but a lot of landscaping to be done. 
+            
+            I started this company in a similar way to USAxe Club, bootstrapping with my own savings and labor until I could afford to hire employees. It is taking off though and we’ve shifted our focus now from residential to customer customers such as HOAs, municipalities, business parks, etc.
+            <p>
+            My experiences as founder and president of these companies have taught me far more than I believe a Master’s degree ever could. I have learned amazing lessons about working with partners, hiring and managing staff, supplier and customer relationships, strategic growth, marketing, minimum viable products, accounting, legal, company structure, etc.
+            
+            I am motivated to grow these companies and invest in others moving forward. My main focus though at this point is starting the non-profit that I’ve been developing for the last couple of years to really make a difference in the lives of people less fortunate than me.
+            </p>
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/Egbert_Eggs.jpg" style="width:100%" loading="lazy">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/USAxe.jpg" style="width:100%" loading="lazy">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/eLawns.jpg" style="width:100%" loading="lazy">
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <span class="left-aligned">&copy; Colton Egbert 2024</span>
+            <a href="site-plan.html" class="centered">Site Plan</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slideshow -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        
+    </script>
+</body>
+</html>
