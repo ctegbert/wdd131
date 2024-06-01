@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <meta name="description" content="Review Submission Confirmation">
+    <meta name="author" content="Colton Egbert">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+</head>
+<body>
+    <main>
+        <h1>Review Submitted!</h1>
+        <p>Thank you for your review.</p>
+        <p>Total Reviews Submitted: <span id="reviewCount"></span></p>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Colton Egbert, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        if (localStorage.getItem('reviewCount')) {
+            localStorage.setItem('reviewCount', Number(localStorage.getItem('reviewCount')) + 1);
+        } else {
+            localStorage.setItem('reviewCount', 1);
+        }
+        document.getElementById('reviewCount').textContent = localStorage.getItem('reviewCount');
+    </script>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
